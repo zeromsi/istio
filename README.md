@@ -8,6 +8,15 @@
  
 * ``` In a word a service mesh is an extra layer over your container orchestration platform. ```
 
+From istio's official doc:
+
+```
+The term service mesh is used to describe the network of microservices that make up such applications and the interactions between them. As a service mesh grows in size and complexity, it can become harder to understand and manage. Its requirements can include discovery, load balancing, failure recovery, metrics, and monitoring. A service mesh also often has more complex operational requirements, like A/B testing, canary rollouts, rate limiting, access control, and end-to-end authentication.
+
+Istio provides behavioral insights and operational control over the service mesh as a whole, offering a complete solution to satisfy the diverse requirements of microservice applications.
+
+```
+
 Suppose you're running a good number of pods inside you k8s platform. K8s by default gives you a service discovery mechanism. So you can communicate with any container (pod) from any pods. 
 
 K8s is really a good software to manage the lifecycle of your pods. But incase of the visibility of pod networking, it's still little vague. 
@@ -34,10 +43,4 @@ How Istio works?
   
 
 ![alt text](./images/istio-2.png)
-
-
-
-
-  
-     
 
